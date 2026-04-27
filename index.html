@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Emily Thibodeau · Sun-Faded Bohemian · Cascais</title>
+<meta name="description" content="Slow, attentive personal training and recovery in Cascais, Portugal. California-raised, Cascais-based. In studio and online worldwide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..600;1,400..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; }
+</style>
+</head>
+<body>
+
+<!-- ========== NAV ========== -->
+<header id="nav" class="nav-shell">
+  <div class="container" style="display:flex; align-items:center; justify-content:space-between; height:80px;">
+    <a href="#top" class="logo-link" style="text-decoration:none; display:flex; align-items:baseline; gap:6px; transition:opacity 220ms var(--ease-out);">
+      <span style="font-family:var(--font-display); font-weight:500; font-size:24px; color:var(--ink-900); letter-spacing:-0.015em;">Emily</span>
+      <span style="font-family:var(--font-display); font-weight:500; font-style:italic; font-size:24px; color:var(--rose-600); letter-spacing:-0.015em;">Thibodeau<span style="color:var(--terra-500);">.</span></span>
+    </a>
+
+    <nav class="em-nav-desktop" style="display:flex; gap:32px; align-items:center;">
+      <a href="#services" class="nav-link">The work</a>
+      <a href="#process" class="nav-link">How we begin</a>
+      <a href="#about" class="nav-link">About Emily</a>
+      <a href="#testimonials" class="nav-link">Stories</a>
+      <a href="#contact" class="nav-link">Say hello</a>
+      <a class="btn btn-primary" href="#contact" style="font-size:15px; padding:12px 22px;">Book a call</a>
+    </nav>
+
+    <button type="button" class="em-nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer">
+      <svg id="nav-icon-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg id="nav-icon-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" style="display:none;"><path d="M6 6l12 12M6 18L18 6"/></svg>
+    </button>
+  </div>
+
+  <div id="nav-drawer" class="em-nav-drawer">
+    <nav>
+      <a href="#services" data-close>The work</a>
+      <a href="#process" data-close>How we begin</a>
+      <a href="#about" data-close>About Emily</a>
+      <a href="#testimonials" data-close>Stories</a>
+      <a href="#contact" data-close>Say hello</a>
+    </nav>
+    <a class="btn btn-primary drawer-cta" href="#contact" data-close style="font-size:15px;">Book a call</a>
+  </div>
+</header>
+
+<!-- ========== HERO ========== -->
+<section id="top" class="em-hero" style="position:relative; padding:32px 0 120px; background:var(--gradient-morning); overflow:hidden;">
+  <!-- layered sun-faded blobs -->
+  <div aria-hidden="true" style="position:absolute; top:-12%; right:-10%; width:560px; height:560px; background:radial-gradient(closest-side, rgba(184,95,58,0.32), rgba(184,95,58,0) 70%); filter:blur(10px); pointer-events:none;"></div>
+  <div aria-hidden="true" style="position:absolute; bottom:-30%; left:-8%; width:480px; height:480px; background:radial-gradient(closest-side, rgba(135,151,108,0.22), transparent 70%); filter:blur(20px); pointer-events:none;"></div>
+  <!-- faded sun rings -->
+  <div aria-hidden="true" style="position:absolute; top:8%; right:18%; width:180px; height:180px; border-radius:50%; border:1px solid rgba(184,95,58,0.28); pointer-events:none;"></div>
+  <div aria-hidden="true" style="position:absolute; top:12%; right:22%; width:120px; height:120px; border-radius:50%; border:1px dashed rgba(184,95,58,0.32); pointer-events:none;"></div>
+
+  <div class="container" style="position:relative;">
+    <div class="em-hero-grid">
+      <div>
+        <span class="eyebrow">Cascais · Personal training · in studio + online</span>
+        <h1 style="margin-top:8px;">
+          Move gently.<br>
+          <em style="font-style:italic; color:var(--rose-600); font-weight:500;">Live softly.</em><br>
+          Come back to yourself.
+        </h1>
+        <p class="em-hero-sub" style="margin-top:28px; font-size:19px; line-height:1.65; color:var(--ink-700); max-width:560px;">
+          I'm Emily — a California-raised, Cascais-based trainer for the body you actually live in. We work slowly. We listen to the day. Whether you're recovering from injury, learning to trust your knees again, or simply want to feel at home in your own skin — we'll build something that fits.
+        </p>
+        <div style="display:flex; gap:14px; margin-top:36px; flex-wrap:wrap;">
+          <a class="btn btn-primary" href="#contact">
+            Book a free 20-minute call <span class="arrow">→</span>
+          </a>
+          <a class="btn btn-secondary" href="https://wa.me/351900000000">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 22a10 10 0 1 0-8.7-5.1L2 22l5.2-1.4A10 10 0 0 0 12 22Z"/>
+              <path d="M9 9c.3-.5.7-.5 1-.5s.5.1.8.6l.9 1.9c.1.3.1.4 0 .7l-.4.5a.4.4 0 0 0-.1.5 6 6 0 0 0 2.9 2.9.4.4 0 0 0 .5-.1l.5-.4c.3-.1.4-.1.7 0l1.9.9c.5.3.5.5.5.8 0 .3-.1.7-.5 1-.4.4-1.2.7-2.3.7-2.5 0-5-1.5-6.2-2.7s-2.7-3.7-2.7-6.2c0-1.1.3-1.9.7-2.3Z"/>
+            </svg>
+            Send me a WhatsApp
+          </a>
+        </div>
+
+        <div class="em-hero-stats" style="color:var(--ink-500); font-size:14px; font-style:italic;">
+          <div>
+            <strong style="color:var(--ink-900); font-size:26px; font-family:var(--font-display); font-weight:500; font-style:normal; display:block; letter-spacing:-0.01em;">10+ years</strong>
+            specialising in recovery
+          </div>
+          <div>
+            <strong style="color:var(--ink-900); font-size:26px; font-family:var(--font-display); font-weight:500; font-style:normal; display:block; letter-spacing:-0.01em;">200+</strong>
+            bodies coached, gently
+          </div>
+          <div>
+            <strong style="color:var(--ink-900); font-size:26px; font-family:var(--font-display); font-weight:500; font-style:normal; display:block; letter-spacing:-0.01em;">2 coasts</strong>
+            California, then Cascais
+          </div>
+        </div>
+      </div>
+
+      <div class="em-hero-photo" style="position:relative;">
+        <div class="hover-photo" style="border-radius:28px; overflow:hidden; box-shadow:var(--shadow-3); transform:rotate(-1.5deg); border:8px solid var(--cream-50);">
+          <img src="assets/photos/emily-foam-roll-bench.jpg" alt="Emily coaching in her studio" class="sun-faded-photo" style="display:block; width:100%; height:580px; object-fit:cover;">
+        </div>
+        <div class="em-hero-quote" style="position:absolute; bottom:-24px; left:-28px; background:var(--amber-300); padding:18px 22px; border-radius:18px; box-shadow:var(--shadow-2); font-family:var(--font-display); font-weight:500; font-style:italic; color:var(--rose-700); font-size:18px; max-width:260px; line-height:1.3; transform:rotate(-3deg); border:1px solid rgba(116,51,46,0.12);">
+          "She moves at exactly my pace."
+          <div style="font-family:var(--font-body); font-style:italic; font-size:13px; color:var(--rose-700); margin-top:6px; font-weight:500; opacity:0.85;">— David, 61 · Estoril</div>
+        </div>
+        <!-- tape corner -->
+        <div class="em-hero-tape" aria-hidden="true" style="position:absolute; top:-14px; right:30px; width:64px; height:22px; background:rgba(232,198,133,0.7); transform:rotate(8deg); box-shadow:0 2px 6px rgba(74,40,20,0.12);"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SERVICES ========== -->
+<section id="services" class="em-section-tall" style="padding:128px 0 96px; background:var(--cream-50); position:relative;">
+  <div aria-hidden="true" style="position:absolute; top:60px; right:6%; width:200px; height:200px; border-radius:50%; background:radial-gradient(closest-side, rgba(232,198,133,0.4), transparent 70%); pointer-events:none;"></div>
+  <div class="container" style="position:relative;">
+    <div style="max-width:780px; margin-bottom:64px;">
+      <span class="eyebrow">The work · how we can be together</span>
+      <h2 style="margin-top:8px;">Three doors in. <em style="color:var(--rose-600); font-style:italic; font-weight:500;">One unhurried plan,</em> built for you.</h2>
+    </div>
+
+    <div class="em-svc-grid">
+      <article class="service-card">
+        <div class="photo-frame em-svc-photo" style="height:240px; position:relative;">
+          <img src="assets/photos/emily-foam-roll-bench.jpg" alt="" class="sun-faded-photo">
+          <span class="chip chip-amber" style="position:absolute; top:16px; left:16px; backdrop-filter:blur(6px);">Most loved</span>
+        </div>
+        <div style="padding:28px 28px 32px; display:flex; flex-direction:column; flex:1;">
+          <span class="eyebrow">In studio · 60 minutes · Cascais</span>
+          <h3 style="margin-top:6px; margin-bottom:14px;">One-to-one, in the studio</h3>
+          <p style="font-size:16.5px; color:var(--ink-700); flex:1; line-height:1.65; max-width:none;">An hour with me in my small, sun-warmed studio just up the hill from the bay. Hands-on cueing, manual recovery work, and a program that quietly rewrites itself as you change. For anyone rebuilding after injury, surgery, or a long pause.</p>
+          <a href="#contact" style="align-self:flex-start; margin-top:20px; font-family:var(--font-display); font-style:italic; font-size:18px; color:var(--terra-600); text-decoration:none; display:inline-flex; align-items:center; gap:8px;">
+            Book this <span class="book-arrow">→</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="photo-frame em-svc-photo" style="height:240px; position:relative;">
+          <img src="assets/photos/emily-park-stretch.jpg" alt="" class="sun-faded-photo">
+          <span class="chip chip-amber" style="position:absolute; top:16px; left:16px; backdrop-filter:blur(6px);">Worldwide</span>
+        </div>
+        <div style="padding:28px 28px 32px; display:flex; flex-direction:column; flex:1;">
+          <span class="eyebrow">Online · 45 minutes live · anywhere</span>
+          <h3 style="margin-top:6px; margin-bottom:14px; font-style:italic;">Online, wherever you are</h3>
+          <p style="font-size:16.5px; color:var(--ink-700); flex:1; line-height:1.65; max-width:none;">We meet on video — Lisbon mornings, California evenings, anywhere a phone propped on a chair reaches. I write your program, watch you move, adjust as we go, and stay close between sessions. For travellers, expats, and people who train best at home.</p>
+          <a href="#contact" style="align-self:flex-start; margin-top:20px; font-family:var(--font-display); font-style:italic; font-size:18px; color:var(--terra-600); text-decoration:none; display:inline-flex; align-items:center; gap:8px;">
+            Book this <span class="book-arrow">→</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="photo-frame em-svc-photo" style="height:240px; position:relative;">
+          <img src="assets/photos/emily-massage-gun-back.jpg" alt="" class="sun-faded-photo">
+          <span class="chip chip-amber" style="position:absolute; top:16px; left:16px; backdrop-filter:blur(6px);">Recovery</span>
+        </div>
+        <div style="padding:28px 28px 32px; display:flex; flex-direction:column; flex:1;">
+          <span class="eyebrow">In studio · 45 minutes</span>
+          <h3 style="margin-top:6px; margin-bottom:14px;">Manual recovery sessions</h3>
+          <p style="font-size:16.5px; color:var(--ink-700); flex:1; line-height:1.65; max-width:none;">Massage-gun work, assisted foam rolling, guided mobility — slow, deliberate, kind to whatever ails you. A standalone reset, or a soft landing after a hard week. Often paired with a 1:1 to make a long, restorative two hours.</p>
+          <a href="#contact" style="align-self:flex-start; margin-top:20px; font-family:var(--font-display); font-style:italic; font-size:18px; color:var(--terra-600); text-decoration:none; display:inline-flex; align-items:center; gap:8px;">
+            Book this <span class="book-arrow">→</span>
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========== COASTS ========== -->
+<section class="em-section" style="padding:96px 0; background:var(--cream-100); position:relative; overflow:hidden;">
+  <div aria-hidden="true" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:80%; height:1px; background:linear-gradient(90deg, transparent, rgba(184,95,58,0.32), transparent); pointer-events:none;"></div>
+  <div class="container">
+    <div class="em-coasts-grid">
+      <div>
+        <div style="font-size:12px; letter-spacing:0.22em; text-transform:uppercase; font-style:italic; color:var(--terra-600); font-weight:500; margin-bottom:14px;">Where it began</div>
+        <div class="em-coasts-name" style="font-family:var(--font-display); font-style:italic; font-size:44px; font-weight:500; color:var(--ink-900); letter-spacing:-0.01em; line-height:1.1;">California</div>
+        <p style="margin-top:14px; font-size:16px; color:var(--ink-700); line-height:1.65; font-style:italic; text-align:center; max-width:none; margin-left:auto; margin-right:auto;">Marin County mornings, ocean swims, the long, patient rhythm I still teach by.</p>
+      </div>
+      <div class="em-coasts-arrow" style="font-family:var(--font-display); font-style:italic; font-size:36px; color:var(--terra-500); font-weight:500;">⤳</div>
+      <div>
+        <div style="font-size:12px; letter-spacing:0.22em; text-transform:uppercase; font-style:italic; color:var(--terra-600); font-weight:500; margin-bottom:14px;">Where it lives now</div>
+        <div class="em-coasts-name" style="font-family:var(--font-display); font-style:italic; font-size:44px; font-weight:500; color:var(--ink-900); letter-spacing:-0.01em; line-height:1.1;">Cascais</div>
+        <p style="margin-top:14px; font-size:16px; color:var(--ink-700); line-height:1.65; font-style:italic; text-align:center; max-width:none; margin-left:auto; margin-right:auto;">A small studio above the bay, the same patient work, the same sun-warmed light.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PROCESS ========== -->
+<section id="process" class="em-section-tall" style="padding:128px 0; background:var(--cream-100); position:relative; overflow:hidden;">
+  <div aria-hidden="true" style="position:absolute; top:80px; left:-4%; width:280px; height:280px; border-radius:50%; background:radial-gradient(closest-side, rgba(184,95,58,0.12), transparent 70%);"></div>
+  <div class="container" style="position:relative;">
+    <div style="max-width:680px; margin-bottom:88px;">
+      <span class="eyebrow">How we begin · three quiet steps</span>
+      <h2 style="margin-top:8px;">No templates. No rush. <em style="color:var(--rose-600); font-style:italic; font-weight:500;">Just a plan that fits the body you live in.</em></h2>
+    </div>
+
+    <div style="display:flex; flex-direction:column; gap:96px;">
+      <div class="process-row em-process-row" style="direction:ltr;">
+        <div class="hover-photo em-process-photo" style="border-radius:28px; overflow:hidden; box-shadow:var(--shadow-2); border:6px solid var(--cream-50);">
+          <img src="assets/photos/emily-massage-gun-foot.jpg" alt="" class="sun-faded-photo" style="width:100%; height:420px; object-fit:cover; display:block;">
+        </div>
+        <div>
+          <span class="process-num">01</span>
+          <h3 style="font-size:38px; margin-bottom:18px; margin-top:4px;">We talk first</h3>
+          <p style="font-size:18px; color:var(--ink-700); line-height:1.7; max-width:520px;">A free 20-minute call — Zoom, WhatsApp, whatever you prefer. You tell me what's going on: the injury, the ache, the run you've been missing, the grandkid you can't lift. I listen, ask a lot of questions, and tell you honestly whether I'm the right fit.</p>
+        </div>
+      </div>
+
+      <div class="process-row em-process-row" style="direction:rtl;">
+        <div class="hover-photo em-process-photo" style="direction:ltr; border-radius:28px; overflow:hidden; box-shadow:var(--shadow-2); border:6px solid var(--cream-50);">
+          <img src="assets/photos/hamstring-assist.jpg" alt="" class="sun-faded-photo" style="width:100%; height:420px; object-fit:cover; display:block;">
+        </div>
+        <div style="direction:ltr;">
+          <span class="process-num">02</span>
+          <h3 style="font-size:38px; margin-bottom:18px; margin-top:4px;">We sketch your plan</h3>
+          <p style="font-size:18px; color:var(--ink-700); line-height:1.7; max-width:520px;">Your program is written by hand, for you, the week before we start — never a template. If you've been told to "just be careful" or "stop doing the thing you love", that's exactly where we begin, and we work back toward it, week by week.</p>
+        </div>
+      </div>
+
+      <div class="process-row em-process-row" style="direction:ltr;">
+        <div class="hover-photo em-process-photo" style="border-radius:28px; overflow:hidden; box-shadow:var(--shadow-2); border:6px solid var(--cream-50);">
+          <img src="assets/photos/emily-foam-roll-bench.jpg" alt="" class="sun-faded-photo" style="width:100%; height:420px; object-fit:cover; display:block;">
+        </div>
+        <div>
+          <span class="process-num">03</span>
+          <h3 style="font-size:38px; margin-bottom:18px; margin-top:4px;">We get to work</h3>
+          <p style="font-size:18px; color:var(--ink-700); line-height:1.7; max-width:520px;">We train together — in the Cascais studio, on a Lisbon balcony, in your living room in Marin. I adjust the plan as your body teaches us things. My job is to make you more capable in your own life, then to gracefully step out of the way once you are.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ABOUT ========== -->
+<section id="about" class="em-section-tall" style="padding:128px 0; background:var(--cream-50); position:relative; overflow:hidden;">
+  <div aria-hidden="true" style="position:absolute; bottom:-12%; right:-6%; width:420px; height:420px; border-radius:50%; background:radial-gradient(closest-side, rgba(232,198,133,0.32), transparent 70%);"></div>
+  <div class="container" style="position:relative;">
+    <div class="em-about-grid">
+      <div style="position:relative;">
+        <div aria-hidden="true" style="position:absolute; inset:-28px -28px 28px 28px; background:var(--terra-100); border-radius:28px;"></div>
+        <div aria-hidden="true" style="position:absolute; top:-6%; left:-12%; width:90px; height:90px; border-radius:50%; border:1px dashed rgba(184,95,58,0.45);"></div>
+        <div class="hover-photo em-about-photo" style="position:relative; border-radius:28px; overflow:hidden; box-shadow:var(--shadow-3); border:8px solid var(--cream-50);">
+          <img src="assets/photos/emily-box-seated.jpg" alt="Emily Thibodeau" class="sun-faded-photo" style="display:block; width:100%; height:580px; object-fit:cover;">
+        </div>
+        <div class="em-about-pin" style="position:absolute; bottom:-18px; right:-22px; background:var(--cream-50); padding:12px 18px; border-radius:999px; box-shadow:var(--shadow-2); font-family:var(--font-display); font-style:italic; font-weight:500; font-size:15px; color:var(--rose-600); border:1px solid rgba(184,95,58,0.18);">
+          Cascais · Portugal
+        </div>
+      </div>
+      <div>
+        <span class="eyebrow">About · the person behind the plan</span>
+        <h2 style="margin-top:8px;">Hi, I'm <em style="color:var(--rose-600); font-style:italic; font-weight:500;">Emily.</em></h2>
+        <p style="margin-top:24px; font-size:19px; line-height:1.7; color:var(--ink-700); max-width:580px;">I grew up under California sun — long beach days, hand-me-down bicycles, the kind of childhood that quietly teaches you to trust your body. I've spent the last decade coaching people of every age and ability: athletes chasing one more season, parents trying to keep up, folks rebuilding after surgery, retirees who simply want to walk down to the market without thinking about their hip.</p>
+        <p style="margin-top:18px; font-size:19px; line-height:1.7; color:var(--ink-700); max-width:580px;">Two years ago I followed a long-held dream across the Atlantic and opened a small studio in Cascais. I work slowly, ask a lot of questions, and adjust the plan as your body teaches us things. The goal hasn't changed — to make you more capable in your own life. The light is just better here.</p>
+        <div style="margin-top:36px;">
+          <div style="font-size:12px; letter-spacing:0.22em; text-transform:uppercase; font-style:italic; color:var(--terra-600); font-weight:500; margin-bottom:14px;">Certifications, kept current</div>
+          <div style="display:flex; flex-wrap:wrap; gap:10px;">
+            <span class="chip" style="background:var(--rose-50); color:var(--rose-700); border:1px solid rgba(116,51,46,0.16);">NASM-CPT</span>
+            <span class="chip" style="background:var(--rose-50); color:var(--rose-700); border:1px solid rgba(116,51,46,0.16);">Corrective Exercise Specialist</span>
+            <span class="chip" style="background:var(--rose-50); color:var(--rose-700); border:1px solid rgba(116,51,46,0.16);">Functional Aging Specialist</span>
+            <span class="chip" style="background:var(--rose-50); color:var(--rose-700); border:1px solid rgba(116,51,46,0.16);">Senior Fitness Specialist</span>
+            <span class="chip" style="background:var(--rose-50); color:var(--rose-700); border:1px solid rgba(116,51,46,0.16);">Pain-Free Performance Certified</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== TESTIMONIALS ========== -->
+<section id="testimonials" class="em-section-tall" style="padding:128px 0; background:var(--rose-700); color:var(--cream-50); position:relative; overflow:hidden;">
+  <div aria-hidden="true" style="position:absolute; bottom:-160px; left:-100px; width:520px; height:520px; background:radial-gradient(closest-side, rgba(184,95,58,0.5), transparent 70%);"></div>
+  <div aria-hidden="true" style="position:absolute; top:-100px; right:-80px; width:380px; height:380px; background:radial-gradient(closest-side, rgba(232,198,133,0.18), transparent 70%);"></div>
+  <div aria-hidden="true" style="position:absolute; top:30%; right:8%; width:140px; height:140px; border-radius:50%; border:1px solid rgba(248,231,196,0.22);"></div>
+  <div class="container" style="position:relative;">
+    <div class="em-test-grid">
+      <div>
+        <span style="color:var(--amber-300); font-size:12px; letter-spacing:0.22em; text-transform:uppercase; font-style:italic; font-weight:500;">Stories · from the studio</span>
+        <h2 style="margin-top:10px; color:var(--cream-50); font-size:clamp(40px, 4.4vw, 60px);">
+          Change comes <em style="color:var(--amber-300); font-style:italic; font-weight:500;">quietly.</em>
+        </h2>
+        <p style="margin-top:20px; color:rgba(247,239,226,0.78); font-size:17px; line-height:1.65; max-width:340px; font-style:italic;">A few words from people I've had the gift of working with.</p>
+      </div>
+
+      <div class="em-test-card" id="testimonial-card" style="background:var(--amber-100); color:var(--rose-700); border-radius:28px; padding:52px 56px; box-shadow:var(--shadow-3); position:relative; border:1px solid rgba(116,51,46,0.12);">
+        <div aria-hidden="true" style="position:absolute; top:-18px; right:32px; font-family:var(--font-display); font-style:italic; font-size:180px; font-weight:500; color:rgba(116,51,46,0.16); line-height:0.8; pointer-events:none;">"</div>
+        <blockquote id="testimonial-quote" style="font-family:var(--font-display); font-style:italic; font-weight:500; font-size:30px; line-height:1.32; color:var(--rose-700); margin:0; letter-spacing:-0.005em; transition:opacity 280ms var(--ease-out);">Emily is the first trainer who really listened to me about my knee. Six months in and I'm hiking the cliffs in Sintra with my grandkids again.</blockquote>
+        <div style="display:flex; align-items:center; gap:16px; margin-top:32px;">
+          <div id="testimonial-initial" style="width:54px; height:54px; border-radius:50%; background:var(--rose-600); color:var(--amber-100); display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-weight:500; font-size:22px; border:2px solid var(--cream-50);">M</div>
+          <div>
+            <div id="testimonial-name" style="font-family:var(--font-display); font-weight:500; font-size:20px; color:var(--rose-800);">Marianne</div>
+            <div id="testimonial-context" style="font-family:var(--font-body); font-style:italic; font-size:14px; color:var(--rose-600);">Post-meniscus repair · 8 months together</div>
+          </div>
+        </div>
+        <div style="display:flex; gap:8px; margin-top:36px; align-items:center;">
+          <div id="testimonial-dots" style="display:flex; gap:8px; align-items:center;"></div>
+          <div style="flex:1;"></div>
+          <button id="testimonial-prev" aria-label="Previous" class="t-arrow" style="width:42px; height:42px; border-radius:50%; border:1px solid rgba(116,51,46,0.3); background:transparent; color:var(--rose-700); cursor:pointer; font-size:18px; font-family:var(--font-display); transition:background 220ms var(--ease-out), color 220ms var(--ease-out), transform 220ms var(--ease-out);">←</button>
+          <button id="testimonial-next" aria-label="Next" class="t-arrow" style="width:42px; height:42px; border-radius:50%; border:1px solid rgba(116,51,46,0.3); background:transparent; color:var(--rose-700); cursor:pointer; font-size:18px; font-family:var(--font-display); transition:background 220ms var(--ease-out), color 220ms var(--ease-out), transform 220ms var(--ease-out);">→</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTACT ========== -->
+<section id="contact" class="em-section-tall" style="padding:128px 0; background:var(--cream-50); position:relative; overflow:hidden;">
+  <div aria-hidden="true" style="position:absolute; top:60px; left:-4%; width:300px; height:300px; border-radius:50%; background:radial-gradient(closest-side, rgba(184,95,58,0.16), transparent 70%);"></div>
+  <div class="container" style="position:relative;">
+    <div class="em-contact-grid">
+      <div>
+        <span class="eyebrow">Say hello · let's talk</span>
+        <h2 style="margin-top:8px;">The first step is <em style="color:var(--rose-600); font-style:italic; font-weight:500;">a quiet conversation.</em></h2>
+        <p style="margin-top:24px; font-size:18px; color:var(--ink-700); max-width:500px; line-height:1.7;">Book a free 20-minute call and tell me what's going on. I'll ask a lot of questions and tell you honestly whether I'm the right person to help you. If I'm not, I almost certainly know someone who is.</p>
+
+        <div style="display:flex; flex-direction:column; gap:14px; margin-top:36px; max-width:420px;">
+          <a href="https://calendly.com/emilythibodeau" class="btn btn-primary" style="justify-content:flex-start;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2.5"/><path d="M3 9h18M8 3v4M16 3v4"/></svg>
+            Book a free 20-min call
+          </a>
+          <a href="https://wa.me/351900000000" class="btn btn-secondary" style="justify-content:flex-start;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22a10 10 0 1 0-8.7-5.1L2 22l5.2-1.4A10 10 0 0 0 12 22Z"/><path d="M9 9c.3-.5.7-.5 1-.5s.5.1.8.6l.9 1.9c.1.3.1.4 0 .7l-.4.5a.4.4 0 0 0-.1.5 6 6 0 0 0 2.9 2.9.4.4 0 0 0 .5-.1l.5-.4c.3-.1.4-.1.7 0l1.9.9c.5.3.5.5.5.8 0 .3-.1.7-.5 1-.4.4-1.2.7-2.3.7-2.5 0-5-1.5-6.2-2.7s-2.7-3.7-2.7-6.2c0-1.1.3-1.9.7-2.3Z"/></svg>
+            Send me a WhatsApp
+          </a>
+          <a href="https://instagram.com/emilythibodeaufitness" class="btn btn-secondary" style="justify-content:flex-start;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg>
+            Find me on Instagram
+          </a>
+        </div>
+
+        <div style="margin-top:48px; padding:24px 28px; background:var(--amber-100); border-radius:18px; border:1px solid rgba(184,95,58,0.18); max-width:420px;">
+          <div style="font-family:var(--font-display); font-style:italic; font-size:18px; color:var(--rose-700); margin-bottom:8px;">The studio</div>
+          <div style="font-size:15px; color:var(--ink-700); line-height:1.6;">
+            Rua das Oliveiras 14, Cascais<br>
+            Cascais, Portugal · 5 minutes from the bay
+          </div>
+        </div>
+      </div>
+
+      <form id="contact-form" class="em-contact-form" style="background:var(--bg-raised); border-radius:28px; padding:40px 44px; box-shadow:var(--shadow-2); display:flex; flex-direction:column; gap:18px; border:1px solid rgba(184,95,58,0.1); align-self:start;">
+        <div>
+          <span class="eyebrow" style="margin-bottom:0;">Or write a note</span>
+          <div style="font-family:var(--font-display); font-weight:500; font-style:italic; font-size:30px; color:var(--ink-900); margin-top:6px; letter-spacing:-0.01em;">I read everything myself.</div>
+        </div>
+        <div id="form-fields" style="display:flex; flex-direction:column; gap:18px;">
+          <div class="field"><label for="cf-name">Your name</label><input id="cf-name" required placeholder="First name"></div>
+          <div class="field"><label for="cf-email">Email</label><input id="cf-email" required type="email" placeholder="you@example.com"></div>
+          <div class="field"><label for="cf-msg">What are you working on?</label><textarea id="cf-msg" rows="4" placeholder="A bit about your goals, your history, what hurts, what you'd like to come back to."></textarea></div>
+          <button class="btn btn-primary" type="submit" style="justify-content:center; margin-top:6px;">Send it along →</button>
+          <div style="font-size:13px; color:var(--ink-400); text-align:center; font-style:italic;">I reply within a day, usually the same morning.</div>
+        </div>
+        <div id="form-thanks" style="display:none; padding:24px 0; font-family:var(--font-display); font-style:italic; font-size:22px; color:var(--rose-600);">
+          Thank you — that came through. I'll write back within a day, usually the same morning.
+          <span style="display:block; margin-top:12px; font-size:15px; font-style:normal; font-family:var(--font-body); color:var(--ink-500);">— Emily</span>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer style="background:var(--rose-800); color:var(--cream-100); padding:80px 0 36px; position:relative; overflow:hidden;">
+  <div aria-hidden="true" style="position:absolute; top:-80px; right:10%; width:280px; height:280px; border-radius:50%; background:radial-gradient(closest-side, rgba(184,95,58,0.32), transparent 70%);"></div>
+  <div class="container" style="position:relative;">
+    <div class="em-footer-grid">
+      <div>
+        <div style="font-family:var(--font-display); font-weight:500; font-size:36px; letter-spacing:-0.015em;">
+          Emily<span style="font-style:italic; color:var(--amber-300);"> Thibodeau<span style="color:var(--terra-400);">.</span></span>
+        </div>
+        <div style="font-size:12px; letter-spacing:0.22em; text-transform:uppercase; font-style:italic; color:var(--amber-300); margin-top:6px; font-weight:500;">Fitness · recovery · Cascais</div>
+        <p style="margin-top:24px; color:rgba(247,239,226,0.82); font-size:16px; max-width:420px; line-height:1.65; font-style:italic;">Slow, attentive training for older adults, injury recovery, and anyone living with chronic pain. In the studio in Cascais, online from Lisbon to Los Angeles.</p>
+      </div>
+      <div>
+        <div style="font-size:12px; letter-spacing:0.22em; text-transform:uppercase; font-style:italic; color:var(--amber-300); margin-bottom:18px; font-weight:500;">Wander</div>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:12px;">
+          <li><a href="#services" class="footer-link" style="font-size:16px;">The work</a></li>
+          <li><a href="#process" class="footer-link" style="font-size:16px;">How we begin</a></li>
+          <li><a href="#about" class="footer-link" style="font-size:16px;">About Emily</a></li>
+          <li><a href="#testimonials" class="footer-link" style="font-size:16px;">Stories</a></li>
+          <li><a href="#contact" class="footer-link" style="font-size:16px;">Say hello</a></li>
+        </ul>
+      </div>
+      <div>
+        <div style="font-size:12px; letter-spacing:0.22em; text-transform:uppercase; font-style:italic; color:var(--amber-300); margin-bottom:18px; font-weight:500;">Reach out</div>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:12px; font-size:16px;">
+          <li><a href="https://wa.me/351900000000" class="footer-link">WhatsApp · +351 900 000 000</a></li>
+          <li><a href="mailto:emily@emilythibodeau.pt" class="footer-link">emily@emilythibodeau.pt</a></li>
+          <li><a href="https://instagram.com/emilythibodeaufitness" class="footer-link">Instagram</a></li>
+          <li><a href="https://calendly.com/emilythibodeau" class="footer-link">Book via Calendly</a></li>
+        </ul>
+        <div style="margin-top:20px; font-style:italic; font-size:14px; color:rgba(247,239,226,0.72); line-height:1.55;">
+          Rua das Oliveiras 14, Cascais<br>Cascais, Portugal
+        </div>
+      </div>
+    </div>
+    <div class="em-footer-bottom" style="border-top:1px solid rgba(247,239,226,0.16); padding-top:28px; display:flex; justify-content:space-between; font-size:13px; color:rgba(247,239,226,0.7); font-style:italic;">
+      <div>© <span id="year"></span> Emily Thibodeau · Cascais, Portugal</div>
+      <div>Built slowly, with care · California → Cascais</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // sticky nav scroll shadow
+  (function() {
+    var nav = document.getElementById('nav');
+    var onScroll = function() {
+      if (window.scrollY > 40) nav.classList.add('scrolled');
+      else nav.classList.remove('scrolled');
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  })();
+
+  // mobile drawer
+  (function() {
+    var toggle = document.getElementById('nav-toggle');
+    var drawer = document.getElementById('nav-drawer');
+    var iconOpen = document.getElementById('nav-icon-open');
+    var iconClose = document.getElementById('nav-icon-close');
+    if (!toggle) return;
+
+    function setOpen(open) {
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      drawer.classList.toggle('open', open);
+      iconOpen.style.display  = open ? 'none'  : 'block';
+      iconClose.style.display = open ? 'block' : 'none';
+      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    }
+    toggle.addEventListener('click', function() {
+      setOpen(!drawer.classList.contains('open'));
+    });
+    drawer.querySelectorAll('[data-close]').forEach(function(a) {
+      a.addEventListener('click', function() { setOpen(false); });
+    });
+    // close on resize back to desktop
+    window.addEventListener('resize', function() {
+      if (window.innerWidth > 900) setOpen(false);
+    });
+  })();
+
+  // testimonials carousel
+  (function() {
+    var items = [
+      { quote: "Emily is the first trainer who really listened to me about my knee. Six months in and I'm hiking the cliffs in Sintra with my grandkids again.", name: 'Marianne', context: 'Post-meniscus repair · 8 months together', initial: 'M' },
+      { quote: "I came to Emily terrified of re-injuring my back. She moved at exactly my pace and never once made me feel fragile. I feel stronger at 61 than I did at 45.", name: 'David', context: 'Chronic low-back pain · 2 years together', initial: 'D' },
+      { quote: "After my shoulder surgery, my physio discharged me and I had no idea what to do next. Emily bridged that gap so gently. I'm swimming laps in the Atlantic again.", name: 'Priya', context: 'Post-rotator-cuff repair · 1 year together', initial: 'P' },
+      { quote: "I train with Emily online from San Francisco. Same coach my mother sees in Cascais. There's something lovely about that.", name: 'Hannah', context: 'Online · 14 months together', initial: 'H' },
+    ];
+    var i = 0;
+    var quote = document.getElementById('testimonial-quote');
+    var name = document.getElementById('testimonial-name');
+    var context = document.getElementById('testimonial-context');
+    var initial = document.getElementById('testimonial-initial');
+    var dotsWrap = document.getElementById('testimonial-dots');
+    var prev = document.getElementById('testimonial-prev');
+    var next = document.getElementById('testimonial-next');
+
+    items.forEach(function(_, j) {
+      var b = document.createElement('button');
+      b.setAttribute('aria-label', 'Story ' + (j + 1));
+      b.style.cssText = 'height:8px; border-radius:999px; border:0; cursor:pointer; padding:0; transition:width 320ms cubic-bezier(0.22,1,0.36,1), background 220ms cubic-bezier(0.22,1,0.36,1);';
+      b.dataset.idx = j;
+      b.addEventListener('click', function() { setI(j); });
+      dotsWrap.appendChild(b);
+    });
+
+    function setI(n) {
+      i = (n + items.length) % items.length;
+      quote.style.opacity = '0';
+      setTimeout(function() {
+        var t = items[i];
+        quote.textContent = t.quote;
+        name.textContent = t.name;
+        context.textContent = t.context;
+        initial.textContent = t.initial;
+        quote.style.opacity = '1';
+      }, 180);
+      Array.prototype.forEach.call(dotsWrap.children, function(d, j) {
+        d.style.width = j === i ? '32px' : '8px';
+        d.style.background = j === i ? 'var(--rose-700)' : 'rgba(116,51,46,0.3)';
+      });
+    }
+    setI(0);
+
+    prev.addEventListener('click', function() { setI(i - 1); });
+    next.addEventListener('click', function() { setI(i + 1); });
+
+    [prev, next].forEach(function(btn) {
+      var dir = btn === prev ? -2 : 2;
+      btn.addEventListener('mouseenter', function() {
+        btn.style.background = 'var(--rose-700)';
+        btn.style.color = 'var(--amber-100)';
+        btn.style.transform = 'translateX(' + dir + 'px)';
+      });
+      btn.addEventListener('mouseleave', function() {
+        btn.style.background = 'transparent';
+        btn.style.color = 'var(--rose-700)';
+        btn.style.transform = 'none';
+      });
+    });
+  })();
+
+  // contact form thank-you
+  (function() {
+    var form = document.getElementById('contact-form');
+    if (!form) return;
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('form-fields').style.display = 'none';
+      document.getElementById('form-thanks').style.display = 'block';
+    });
+  })();
+
+  // logo hover dim
+  (function() {
+    var logo = document.querySelector('.logo-link');
+    if (!logo) return;
+    logo.addEventListener('mouseenter', function() { logo.style.opacity = '0.78'; });
+    logo.addEventListener('mouseleave', function() { logo.style.opacity = '1'; });
+  })();
+
+  // reveal on scroll
+  (function() {
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window) || !els.length) {
+      els.forEach(function(e) { e.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries) {
+      entries.forEach(function(en) {
+        if (en.isIntersecting) {
+          en.target.classList.add('in');
+          io.unobserve(en.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -10% 0px' });
+    els.forEach(function(e) { io.observe(e); });
+  })();
+</script>
+
+</body>
+</html>
